@@ -1,0 +1,6 @@
+(if {?sexo} = 1 THEN
+   {SRA100.RA_SEXO} = 'M'
+else if {?sexo} = 2 THEN
+    {SRA100.RA_SEXO} = 'F'
+else
+{SRA100.RA_SEXO} = {SRA100.RA_SEXO}
