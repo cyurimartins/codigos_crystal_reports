@@ -1,0 +1,23 @@
+// Essa fórmula de formatação condicional deve retornar um dos seguintes Constantes de Cor:
+// 
+// Color (red, green, blue)
+// crBlack
+// crMaroon
+// crGreen
+// crOlive
+// crNavy
+// crPurple
+// crTeal
+// crSilver
+// crRed
+// crLime
+// crYellow
+// crBlue
+// crFuchsia
+// crAqua
+// crWhite
+// crNoColor
+// 
+
+// relatório grupo efeito zebrado
+if remainder(groupnumber,2)=0 then silver else nocolor
