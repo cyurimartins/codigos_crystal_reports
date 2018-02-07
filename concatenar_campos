@@ -1,0 +1,7 @@
+Para concatenar campos de um relatório basta adicionar uma nova fórmula, com o seguinte conteudo:
+
+{campo1} + '-' + {campo2}
+
+
+EXEMPLO pra gerar um campo CTPS
+{SRA100.RA_NUMCP} + '-' + {SRA100.RA_SERCP}
