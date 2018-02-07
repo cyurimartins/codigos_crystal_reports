@@ -1,0 +1,3 @@
+//FILTRAR CATEGORIA
+
+TRIM({SRA100.RA_CATFUNC}) IN TRIM({?categoria})  
