@@ -1,0 +1,8 @@
+Filtrar período no relatório:
+
+Criar parâmetros no relatório: dataInicial e dataFim
+
+// selecionar o campo da tabela e filtrar com dataIni e dataFim, conforme exemplo abaixo.
+// Exemplo abaixo filtrando data de rescesso de estágio de um colaborador. 
+
+{SR8100.R8_DATAINI} in {?data ini} to {?data fim}
