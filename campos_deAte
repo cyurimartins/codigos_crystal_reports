@@ -1,0 +1,6 @@
+{SD2060.D2_EMISSAO} >= {?emisde}
+AND {SD2060.D2_EMISSAO} <= {?emisate}
+AND {SD2060.D2_CLIENTE} >= {?clientede}
+AND {SD2060.D2_CLIENTE} <= {?clienteate}
+AND {SD2060.D2_LOJA}    >= {?lojade}
+AND {SD2060.D2_LOJA}    <= {?lojaate}
