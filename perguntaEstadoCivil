@@ -1,0 +1,17 @@
+if {SRA100.RA_ESTCIVI} = 'C' then
+"[ ]SOLTEIRO [x] CASADO   [ ]  VIÚVO [ ] DESQ/DIV"
+
+else if {SRA100.RA_ESTCIVI} = 'S'then
+"[x]  SOLTEIRO  [ ] CASADO   [ ] VIÚVO [ ] DESQ/DIV"
+
+else if {SRA100.RA_ESTCIVI} = 'D' then
+"[ ] SOLTEIRO [ ] CASADO   [ ] VIÚVO [x] DESQ/DIV" 
+
+else if {SRA100.RA_ESTCIVI} = 'V' then
+"[ ] SOLTEIRO [ ] CASADO   [x] VIÚVO [ ] DESQ/DIV" 
+
+else if {SRA100.RA_ESTCIVI} = '' then
+"[ ] SOLTEIRO [ ] CASADO   [ ] VIÚVO [ ] DESQ/DIV" 
+
+else if {SRA100.RA_ESTCIVI} = '' then
+"[ ] SOLTEIRO [ ] CASADO   [ ] VIÚVO [ ] DESQ/DIV" 
