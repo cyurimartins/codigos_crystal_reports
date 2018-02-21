@@ -1,0 +1,8 @@
+if {SRA100.RA_SEXO} ='M' then
+"  [X] MASC. [ ]  FEM."
+else if {SRA100.RA_SEXO} ='F' then
+"  [ ] MASC. [X] FEM."
+else if {SRA100.RA_SEXO} ='' then
+"  [ ] MASC. [ ] FEM."
+else if {SRA100.RA_MAE} ='' then
+"  [ ] MASC. [ ] FEM."
