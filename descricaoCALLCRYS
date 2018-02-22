@@ -1,0 +1,57 @@
+Função Callcrys:
+
+CALLCRYS (rpt , params, options), onde:
+
+rpt = Nome do relatório, sem o caminho.
+
+params = Parâmetros do relatório, separados por vírgula ou ponto e vírgula. Caso seja marcado este parâmetro, serão desconsiderados os parâmetros marcados no SX1.
+
+options = Opções para não se mostrar a tela de configuração de impressão , no formato x;y;z;w ,onde:
+
+x = Impressão em Vídeo(1), Impressora(2), Impressora(3), Excel (4), Excel Tabular(5), PDF(6) e Texto (7) .
+
+y = Atualiza Dados(0) ou não(1)
+
+z = Número de Cópias, para exportação este valor sempre será 1.
+
+w =Título do Report, para exportação este será o nome do arquivo sem extensão.
+
+ 
+
+Exemplo:
+
+/*Definição dos paramentos para o relatório.*/  
+
+cParams := �000001;01/10/2000;31/10/2000;SP�
+
+/*Definição das opções para geração do relatório.*/
+
+cOptions := 2;0;2;Pedido de Compras
+
+/*Chamada da função .*/
+
+CallCrys(�REP01�, cParams,cOptions)
+
+Return .T.
+
+ 
+
+Caso o conteúdo  do segundo parâmetro seja muito extenso, deve-se gravá-lo em um arquivo temporário com extensão .TXT e passar este arquivo temporário como o parâmetro.
+
+Exemplo:
+
+ 
+
+/*Arquivo que conterá os valores dos parâmetros.*/
+
+cFile := CriaTrab(nil,.f.)+.Txt
+
+/*Definição das opções para geração do relatório.*/
+
+cOptions := 2;0;2;Pedido de Compras
+
+/*Chamada da função com passagem de parâmetros por arquivo.*/
+
+CallCrys(�REP01�,cFile,cOptions)
+
+Return .T.
