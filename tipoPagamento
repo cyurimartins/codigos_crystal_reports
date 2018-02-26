@@ -1,0 +1,19 @@
+//Tipo de pagamento
+
+if {?MV_PAR01} = '1' then
+    "[x] Boleto Bancário     [ ] Cheque     [ ] Crédito Conta     [ ] DOC     [ ] Ordem de Pagamento    [ ]TED        [ ]DDA"
+else if {?MV_PAR01} = '2' then
+    "[ ] Boleto Bancário     [x] Cheque     [ ] Crédito Conta     [ ] DOC     [ ] Ordem de Pagamento    [ ]TED        [ ]DDA"
+else if {?MV_PAR01} = '3' then
+    "[ ] Boleto Bancário     [ ] Cheque     [x] Crédito Conta     [ ] DOC     [ ] Ordem de Pagamento    [ ]TED        [ ]DDA"
+else if {?MV_PAR01} = '4' then
+    (if {SE2100.E2_VALOR} < 5000.00 then
+    "[ ] Boleto Bancário     [ ] Cheque     [ ] Crédito Conta     [x] DOC     [ ] Ordem de Pagamento    [ ]TED        [ ]DDA"
+    else if {SE2100.E2_VALOR} >= 5000.00 then
+    "[ ] Boleto Bancário     [ ] Cheque     [ ] Crédito Conta     [ ] DOC     [ ] Ordem de Pagamento    [x]TED        [ ]DDA")
+else if {?MV_PAR01} = '5' then
+    "[ ] Boleto Bancário     [ ] Cheque     [ ] Crédito Conta     [ ] DOC     [x] Ordem de Pagamento    [ ]TED        [ ]DDA"
+else if {?MV_PAR01} = '7' then
+    "[ ] Boleto Bancário     [ ] Cheque     [ ] Crédito Conta     [ ] DOC     [ ] Ordem de Pagamento    [ ]TED        [x]DDA"
+
+    
