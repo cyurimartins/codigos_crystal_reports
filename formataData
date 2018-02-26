@@ -1,0 +1,2 @@
+//formatando data vencimento dia/mes/ano
+MID({SE2100.E2_VENCTO},7,2)&'/'&MID({SE2100.E2_VENCTO},5,2)&'/'&MID({SE2100.E2_VENCTO},1,4)
