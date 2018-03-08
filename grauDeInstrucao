@@ -1,0 +1,48 @@
+if {SRA100.RA_GRINRAI} = '55' then
+"[ ] Fundamental [ ] Medio [x] Superior [ ] Pós-Graduação [ ] Mestrado            [ ] Doutorado"
+
+else if {SRA100.RA_GRINRAI} = '65' then
+"[ ] Fundamental [ ] Medio [ ] Superior [ ] Pós-Graduação [x] Mestrado            [ ] Doutorado"
+
+else if {SRA100.RA_GRINRAI} = '75' then
+"[ ] Fundamental [ ] Medio [ ] Superior [ ] Pós-Graduação [ ] Mestrado            [x] Doutorado"
+
+else if {SRA100.RA_GRINRAI} = '50' then
+"[ ] Fundamental [ ] Medio [x] Superior [ ] Pós-Graduação [ ] Mestrado            [ ] Doutorado"
+
+else if {SRA100.RA_GRINRAI} = '85' then
+"[ ] Fundamental [ ] Medio [ ] Superior [x] Pós-Graduação [ ] Mestrado            [ ] Doutorado"
+
+else if {SRA100.RA_GRINRAI} = ' ' then
+"[ ] Fundamental [ ] Medio [ ] Superior [ ] Pós-Graduação [ ] Mestrado            [ ] Doutorado"
+
+else if {SRA100.RA_GRINRAI} = '' then
+"[ ] Fundamental [ ] Medio [ ] Superior [ ] Pós-Graduação [ ] Mestrado            [ ] Doutorado"
+
+else if {SRA100.RA_GRINRAI} = '40' then
+"[ ] Fundamental [x] Medio [ ] Superior [ ] Pós-Graduação [ ] Mestrado            [ ] Doutorado"
+
+else if {SRA100.RA_GRINRAI} = '45' then
+"[ ] Fundamental [x] Medio [ ] Superior [ ] Pós-Graduação [ ] Mestrado            [ ] Doutorado"
+
+else if {SRA100.RA_GRINRAI} = '35' then
+"[x] Fundamental [ ] Medio [ ] Superior [ ] Pós-Graduação [ ] Mestrado            [ ] Doutorado"
+
+else if {SRA100.RA_GRINRAI} = '25' then
+"[x] Fundamental [ ] Medio [ ] Superior [ ] Pós-Graduação [ ] Mestrado            [ ] Doutorado"
+
+else if {SRA100.RA_GRINRAI} = '20' then
+"[x] Fundamental [ ] Medio [ ] Superior [ ] Pós-Graduação [ ] Mestrado            [ ] Doutorado"
+ 
+else if {SRA100.RA_GRINRAI} = '30' then
+"[x] Fundamental [ ] Medio [ ] Superior [ ] Pós-Graduação [ ] Mestrado            [ ] Doutorado"
+
+
+
+
+
+
+
+
+
+
