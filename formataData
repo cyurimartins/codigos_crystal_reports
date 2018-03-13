@@ -1,2 +1,5 @@
-//formatando data vencimento de 20180305 para dia/mes/ano   
+//formatando data vencimento de 20180305 para dia/mes/ano = 05/03/2018   
 MID({SE2100.E2_VENCTO},7,2)&'/'&MID({SE2100.E2_VENCTO},5,2)&'/'&MID({SE2100.E2_VENCTO},1,4)
+
+//formatando data formtato 20180305 para dia/mes/ano 05/03/18  
+mid({SE2100.E2_EMISSAO},7,2)+"/"+mid({SE2100.E2_EMISSAO},5,2)+"/"+mid({SE2100.E2_EMISSAO},3,2)
