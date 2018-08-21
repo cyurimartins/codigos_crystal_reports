@@ -19,5 +19,10 @@
 // crNoColor
 // 
 
-// relatório grupo efeito zebrado
+// GRUPO COM EFEITO ZEBRADO
 if remainder(groupnumber,2)=0 then silver else nocolor
+
+
+//LINHA COM EFEITO ZEBRADO
+//if remainder(recordnumber,2)=0 then silver else nocolor
+
